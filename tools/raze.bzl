@@ -3,7 +3,6 @@ def _raze_impl(ctx):
     cargo_lock = ctx.attr.cargo_lock
     ctx.symlink(cargo_toml, "./Cargo.toml")
     ctx.symlink(cargo_lock, "./Cargo.lock")
-    print("hello")
     # This is jank. We should load this and install it.
     ctx.execute(["/home/alex/projects/raze-vendor/target/debug/cargo-raze-vendor", "raze", "."])
 
