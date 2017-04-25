@@ -9,6 +9,6 @@ rust_library(
     name = "widget",
     srcs = glob(["src/**/*.rs"]),
     deps = [
-        "@vendor//tar-0.4.10:tar",
+        "@io_crates_nom_2_2_1//:nom",
     ],
 )
